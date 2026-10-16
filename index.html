@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka | Personal Portfolio</title>
+  
+  <!-- Link to the external CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts: Inter for clean, modern readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========================================================
+       1. NAVIGATION BAR
+       - Stays fixed at the top of the page.
+       - Contains links that jump down to each section.
+       - Includes a toggle button for mobile screens.
+       ======================================================== -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <!-- Website Logo / Brand Name -->
+      <a href="#home" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Priyanka</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================
+         2. HERO / HOME SECTION
+         - The first thing visitors see when opening your website.
+         ======================================================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">👋 Welcome to my portfolio</div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Priyanka</span>
+          </h1>
+          <h2 class="hero-subtitle">Third-Year B.E. Student | Information Science and Engineering</h2>
+          <p class="hero-description">
+            I am a third-year Bachelor of Engineering (B.E.) student specializing in Information Science and Engineering at Basaveshwara engineering college. I am passionate about technology, software development, and exploring innovative solutions to real-world problems. I am continuously enhancing my technical skills, strengthening my programming knowledge, and gaining hands-on experience through projects and collaborative learning. My goal is to build practical, impactful solutions while growing as a software engineer and preparing for exciting opportunities in the IT industry.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <!-- Profile avatar initials for Priyanka -->
+            <div class="avatar-placeholder">
+              <span class="avatar-initials">P</span>
+            </div>
+            <div class="avatar-status">
+              <span class="status-dot"></span>
+              <span>Open to learning &amp; new opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         3. ABOUT ME SECTION
+         - Educational background, interests, and career goals.
+         ======================================================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Who I Am</h3>
+            <p>
+              I am a third-year B.E. student in the Information Science and Engineering department 
+              at <strong>Basaveshwar Engineering College, Bagalkot</strong>.
+            </p>
+            <p>
+              I am interested in learning new technologies, improving my technical skills, and gaining 
+              practical experience. I enjoy exploring new opportunities, working with teams, and improving myself.
+            </p>
+            <p>
+              My goal is to develop my skills and build a successful career in the IT industry.
+            </p>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">🎓</div>
+              <h4>Education</h4>
+              <p>Third-Year B.E. in Information Science and Engineering, Basaveshwara engineering college</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">📍</div>
+              <h4>Location</h4>
+              <p>Bagalkot, Karnataka</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">🎯</div>
+              <h4>Current Focus</h4>
+              <p>Learning New Technologies &amp; Gaining Practical Experience</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon">🚀</div>
+              <h4>Career Goal</h4>
+              <p>Develop my skills and build a successful career in the IT industry</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. SKILLS SECTION
+         - Programming languages, technologies, and strengths.
+         ======================================================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I work with</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Core Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">💻</span>
+              <h3>Programming Languages</h3>
+            </div>
+            <p class="category-desc">Core programming languages learned and practiced during coursework.</p>
+            <ul class="skill-tags">
+              <li class="skill-tag">C</li>
+              <li class="skill-tag">C++</li>
+              <li class="skill-tag">JAVA</li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 2: Technologies & Tools (From Projects) -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🛠️</span>
+              <h3>Project Technologies</h3>
+            </div>
+            <p class="category-desc">Technologies and tools used across academic and practical projects.</p>
+            <ul class="skill-tags">
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">Machine Learning</li>
+              <li class="skill-tag">HTML</li>
+              <li class="skill-tag">CSS</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">MySQL</li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 3: Key Strengths -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">💡</span>
+              <h3>Core Strengths</h3>
+            </div>
+            <p class="category-desc">Personal and professional values guiding my learning journey.</p>
+            <ul class="skill-tags">
+              <li class="skill-tag">Working With Teams</li>
+              <li class="skill-tag">Learning New Technologies</li>
+              <li class="skill-tag">Continuous Self-Improvement</li>
+              <li class="skill-tag">Exploring New Opportunities</li>
+              <li class="skill-tag">Practical Problem Solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. PROJECTS SECTION
+         - Displays the three projects specified.
+         ======================================================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1: Spam Email Classifier -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">Project 01</div>
+              <span class="project-icon">🛡️</span>
+            </div>
+            <h3 class="project-title">Spam Email Classifier</h3>
+            <p class="project-description">
+              A system that identifies whether an email is spam or legitimate. It analyzes email content 
+              and classifies messages to help users identify unwanted or suspicious emails.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link">
+                <span>Academic Project</span>
+              </span>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Web Traffic Analyzer -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">Project 02</div>
+              <span class="project-icon">📊</span>
+            </div>
+            <h3 class="project-title">Web Traffic Analyzer</h3>
+            <p class="project-description">
+              A web-based application that analyzes website traffic and displays information such as visitor counts, 
+              popular pages, and traffic trends through interactive dashboards. It helps website administrators understand user activity.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link">
+                <span>Web Application</span>
+              </span>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Satellite Image Analysis System -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">Project 03</div>
+              <span class="project-icon">🛰️</span>
+            </div>
+            <h3 class="project-title">Satellite Image Analysis System</h3>
+            <p class="project-description">
+              A system that analyzes satellite images to identify changes in land use, detect water bodies, 
+              and monitor construction activities. Users can upload satellite images and explore changes in geographical areas.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Satellite Imagery</span>
+              <span class="tag">Land Use Analysis</span>
+              <span class="tag">Water Body Detection</span>
+              <span class="tag">Geographical Analysis</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link">
+                <span>Image Analysis System</span>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. CONTACT SECTION
+         - Ways to connect with Priyanka.
+         ======================================================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's connect</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Side -->
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <p>
+              I am interested in learning new technologies, exploring new opportunities, and working with teams. 
+              Feel free to reach out!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:priyank@gmail.com" class="contact-value">priyank@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Bagalkot, Karnataka</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <div>
+                  <span class="contact-label">Academic Status</span>
+                  <span class="contact-value">Third-Year B.E. Student, ISE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Links -->
+            <div class="social-links">
+              <a href="mailto:priyank@gmail.com" class="social-btn" aria-label="Send Email">
+                Send Email
+              </a>
+              <a href="#home" class="social-btn" aria-label="Top of Page">
+                Portfolio Top
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Side -->
+          <div class="contact-form-container">
+            <!-- TIP: To receive emails directly to your inbox via a free static form service (e.g. Formspree or Web3Forms), 
+                 add action="https://formspree.io/f/YOUR_FORM_ID" method="POST" to the form tag below.
+                 Without an action, script.js validates the message and prepares a pre-filled email in the visitor's mail client. -->
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Enter your name" 
+                  required 
+                />
+                <span class="form-error" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Enter your email address" 
+                  required 
+                />
+                <span class="form-error" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  placeholder="Enter subject" 
+                  required 
+                />
+                <span class="form-error" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="4" 
+                  placeholder="Write your message here..." 
+                  required
+                ></textarea>
+                <span class="form-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <span class="btn-icon">&rarr;</span>
+              </button>
+
+              <!-- Success Notification Message shown by JavaScript -->
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       7. FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="current-year"></span> Priyanka. All rights reserved.</p>
+      <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <span>Back to Top</span>
+        <span class="arrow">&uarr;</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
